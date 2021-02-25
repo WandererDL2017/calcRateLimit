@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" class="calc">
+        <div class="calc_column">
+            <label for="limitBps">Введите число в байтах:&nbsp;</label>
+            <input type="text" id="limitBps" class='calc_row' pattern="^[ 0-9]+$" placeholder="Введите скорость в байтах">
+        </div>
+        <div class="calc_column">
+            <label for="mode">Выберите режим из списка:&nbsp;</label>
+            <input list="modes" id="mode" class='calc_row' placeholder="input/output">
+                <datalist id="modes">
+                    <option value="input">
+                    <option value="output">
+                </datalist>
+        </div>
+        <div class="calc_column">
+            <label for="accessGroup">Введите название группы ACL:&nbsp;</label>
+            <input type="text" id="accessGroup" class='calc_row' placeholder="acl-группа">
+        </div>
+        <input type="submit" class="button calc_button" value="Посчитать">
+        <p class="calc_result"></p>
+    </form>
+    <form action="" class="check_mask__form">
+        <div class="check_mask__column">
+        <label for="mask">Введите номер маски от 1 до 32:&nbsp;</label>
+        <input type="text" id="mask" class="check_mask__input">
+        </div>
+        <div class="check_mask__result">
+            <p class="check_mask__straight"></p>
+            <p class="check_mask__wild"></p>
+            <p class="check_mask__amount-addresses"></p>
+        </div>
+        
+        <button class="button check_mask__submit">Вычислить</button>
+    </form>
+    <div>
+        <table class="table">
+            <tbody>
+                <tr class="tr">
+                    <th class="th table__th_gray">пн</th>
+                    <th class="th table__th_gray">вт</th>
+                    <th class="th table__th_gray">ср</th>
+                    <th class="th table__th_gray">чт</th>
+                    <th class="th table__th_gray">пт</th>
+                    <th class="th table__th_gray">сб</th>
+                    <th class="th table__th_gray">вс</th>
+                </tr>
+                <tr class="tr">
+                    <td class="td">1</td>
+                    <td class="td">2</td>
+                    <td class="td">3</td>
+                    <td class="td">4</td>
+                    <td class="td">5</td>
+                    <td class="td">6</td>
+                    <td class="td">7</td>
+                </tr>
+                <tr class="tr">
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                </tr>
+                <tr class="tr" >
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                </tr>
+                <tr class="tr">
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                </tr>
+                <tr class="tr">
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
